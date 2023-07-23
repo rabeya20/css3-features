@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        :root{
+            --primary-color:rgb(21, 139, 84);
+            --font-size:12px
+        }
+       h1 {
+        color: var(--primary-color);
+
+
+       }
+       h3 {
+        background-color: var(--primary-color);
+
+       }
+       .container {
+        border: 1px solid var(--primary-color);
+        padding: 20px;
+        width: calc(100% - 1000px);
+
+       }
+       .container p{
+        color: var(--primary-color);
+        font-size: var(--font-size);
+       }
+       .main-content {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 200px calc(100% - 200px - 30px);
+        margin-top: 30px;
+       }
+      
+       .sidebar {
+        background-color: pink;
+       }
+       .content {
+        background-color: gray;
+       }
+       
+    </style>
+
+</head>
+<body>
+    <h1>My Custom Property</h1>
+    <h3>Also commonly known as css variable</h3>
+    <div class="container">
+        <h5>My vaiable of css first module</h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda nam possimus ipsam, quaerat ipsum magni enim voluptatem nobis aperiam asperiores in exercitationem, hic beatae officiis animi officia at neque repellat!</p>
+    </div>
+
+
+    <div class="main-content">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">My content</div>
+    </div>
+</body>
+</html>
